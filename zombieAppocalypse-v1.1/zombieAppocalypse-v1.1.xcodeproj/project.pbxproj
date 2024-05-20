@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60086F2E2BCE935D008D6BB6 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F2D2BCE935D008D6BB6 /* playButton.png */; };
+		60086F302BCE936A008D6BB6 /* optionButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F2F2BCE936A008D6BB6 /* optionButton.png */; };
+		60086F322BCE9370008D6BB6 /* exitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F312BCE9370008D6BB6 /* exitButton.png */; };
+		60086F422BCE9ACC008D6BB6 /* playAgainButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F412BCE9ACC008D6BB6 /* playAgainButton.png */; };
+		60086F442BCE9AF8008D6BB6 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F432BCE9AF8008D6BB6 /* backButton.png */; };
+		60086F482BCEB591008D6BB6 /* continueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F472BCEB591008D6BB6 /* continueButton.png */; };
+		60086F4A2BCEB658008D6BB6 /* backToMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F492BCEB658008D6BB6 /* backToMenuButton.png */; };
+		60086F4C2BCEB926008D6BB6 /* gunShot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60086F4B2BCEB925008D6BB6 /* gunShot.wav */; };
+		60086F522BCEC218008D6BB6 /* zombieDeath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60086F512BCEC218008D6BB6 /* zombieDeath.wav */; };
+		60086F562BCEC5D7008D6BB6 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F552BCEC5D7008D6BB6 /* bullet.png */; };
+		60086F5A2BCF4FBD008D6BB6 /* mapGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 60086F592BCF4FBD008D6BB6 /* mapGame.png */; };
+		6077111A2BD7EECA00526364 /* deathAnimation.png in Resources */ = {isa = PBXBuildFile; fileRef = 607711192BD7EECA00526364 /* deathAnimation.png */; };
+		60B8D62F2BC9D1D000BA2C4D /* gameOverSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60B8D62E2BC9D1D000BA2C4D /* gameOverSound.wav */; };
+		60ECC4782BC5A47E00DEF571 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4742BC5A47D00DEF571 /* SDL2_image.framework */; };
+		60ECC4792BC5A47E00DEF571 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4742BC5A47D00DEF571 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60ECC47A2BC5A47E00DEF571 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4752BC5A47D00DEF571 /* SDL2_mixer.framework */; };
+		60ECC47B2BC5A47E00DEF571 /* SDL2_mixer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4752BC5A47D00DEF571 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60ECC47C2BC5A47E00DEF571 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4762BC5A47D00DEF571 /* SDL2.framework */; };
+		60ECC47D2BC5A47E00DEF571 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4762BC5A47D00DEF571 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60ECC47E2BC5A47E00DEF571 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4772BC5A47E00DEF571 /* SDL2_ttf.framework */; };
+		60ECC47F2BC5A47E00DEF571 /* SDL2_ttf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECC4772BC5A47E00DEF571 /* SDL2_ttf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60ECC49F2BC5A4B500DEF571 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC4882BC5A4B500DEF571 /* font.ttf */; };
+		60ECC4A02BC5A4B500DEF571 /* fontGame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC4892BC5A4B500DEF571 /* fontGame.ttf */; };
+		60ECC4A12BC5A4B500DEF571 /* mainMenuSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC48B2BC5A4B500DEF571 /* mainMenuSound.wav */; };
+		60ECC4A22BC5A4B500DEF571 /* battleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC48C2BC5A4B500DEF571 /* battleSound.wav */; };
+		60ECC4A32BC5A4B500DEF571 /* shootEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC48D2BC5A4B500DEF571 /* shootEffect.wav */; };
+		60ECC4A42BC5A4B500DEF571 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC48F2BC5A4B500DEF571 /* heart.png */; };
+		60ECC4A92BC5A4B500DEF571 /* scoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC4952BC5A4B500DEF571 /* scoreBoard.png */; };
+		60ECC4AD2BC5A4B500DEF571 /* holdGunFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC49A2BC5A4B500DEF571 /* holdGunFlip.png */; };
+		60ECC4AE2BC5A4B500DEF571 /* characterFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC49B2BC5A4B500DEF571 /* characterFlip.png */; };
+		60ECC4AF2BC5A4B500DEF571 /* holdGun.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC49C2BC5A4B500DEF571 /* holdGun.png */; };
+		60ECC4B02BC5A4B500DEF571 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC49D2BC5A4B500DEF571 /* character.png */; };
+		60ECC4B12BC5A4B500DEF571 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60ECC49E2BC5A4B500DEF571 /* main.cpp */; };
+		60ECC4B52BC5A60C00DEF571 /* menuBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC4B42BC5A60C00DEF571 /* menuBackground.jpg */; };
+		60ECC4BC2BC6487700DEF571 /* pauseBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 60ECC4BB2BC6487700DEF571 /* pauseBoard.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60ECC4802BC5A47E00DEF571 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60ECC47F2BC5A47E00DEF571 /* SDL2_ttf.framework in Embed Frameworks */,
+				60ECC47D2BC5A47E00DEF571 /* SDL2.framework in Embed Frameworks */,
+				60ECC4792BC5A47E00DEF571 /* SDL2_image.framework in Embed Frameworks */,
+				60ECC47B2BC5A47E00DEF571 /* SDL2_mixer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60086F2D2BCE935D008D6BB6 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		60086F2F2BCE936A008D6BB6 /* optionButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optionButton.png; sourceTree = "<group>"; };
+		60086F312BCE9370008D6BB6 /* exitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitButton.png; sourceTree = "<group>"; };
+		60086F412BCE9ACC008D6BB6 /* playAgainButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAgainButton.png; sourceTree = "<group>"; };
+		60086F432BCE9AF8008D6BB6 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		60086F472BCEB591008D6BB6 /* continueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = continueButton.png; sourceTree = "<group>"; };
+		60086F492BCEB658008D6BB6 /* backToMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backToMenuButton.png; sourceTree = "<group>"; };
+		60086F4B2BCEB925008D6BB6 /* gunShot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gunShot.wav; sourceTree = "<group>"; };
+		60086F512BCEC218008D6BB6 /* zombieDeath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zombieDeath.wav; sourceTree = "<group>"; };
+		60086F552BCEC5D7008D6BB6 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		60086F592BCF4FBD008D6BB6 /* mapGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapGame.png; sourceTree = "<group>"; };
+		60086F812BCF69B5008D6BB6 /* initSDL2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = initSDL2.h; sourceTree = "<group>"; };
+		60086F822BCF6A2D008D6BB6 /* recordScore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = recordScore.h; sourceTree = "<group>"; };
+		60086F872BCF6D14008D6BB6 /* declareVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = declareVariable.h; sourceTree = "<group>"; };
+		607711192BD7EECA00526364 /* deathAnimation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathAnimation.png; sourceTree = "<group>"; };
+		60B8D62B2BC9CDF300BA2C4D /* struct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = struct.h; sourceTree = "<group>"; };
+		60B8D62E2BC9D1D000BA2C4D /* gameOverSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOverSound.wav; sourceTree = "<group>"; };
+		60ECC45D2BC5A43900DEF571 /* zombieAppocalypse-v1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zombieAppocalypse-v1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60ECC4742BC5A47D00DEF571 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
+		60ECC4752BC5A47D00DEF571 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_mixer.framework; sourceTree = "<group>"; };
+		60ECC4762BC5A47D00DEF571 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		60ECC4772BC5A47E00DEF571 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_ttf.framework; sourceTree = "<group>"; };
+		60ECC4822BC5A4B500DEF571 /* mainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainMenu.h; sourceTree = "<group>"; };
+		60ECC4832BC5A4B500DEF571 /* gameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameOver.h; sourceTree = "<group>"; };
+		60ECC4842BC5A4B500DEF571 /* displayTextHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = displayTextHeader.h; sourceTree = "<group>"; };
+		60ECC4852BC5A4B500DEF571 /* handleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handleAnimation.h; sourceTree = "<group>"; };
+		60ECC4862BC5A4B500DEF571 /* gameMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameMusic.h; sourceTree = "<group>"; };
+		60ECC4882BC5A4B500DEF571 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		60ECC4892BC5A4B500DEF571 /* fontGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontGame.ttf; sourceTree = "<group>"; };
+		60ECC48B2BC5A4B500DEF571 /* mainMenuSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mainMenuSound.wav; sourceTree = "<group>"; };
+		60ECC48C2BC5A4B500DEF571 /* battleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = battleSound.wav; sourceTree = "<group>"; };
+		60ECC48D2BC5A4B500DEF571 /* shootEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shootEffect.wav; sourceTree = "<group>"; };
+		60ECC48F2BC5A4B500DEF571 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		60ECC4952BC5A4B500DEF571 /* scoreBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreBoard.png; sourceTree = "<group>"; };
+		60ECC49A2BC5A4B500DEF571 /* holdGunFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holdGunFlip.png; sourceTree = "<group>"; };
+		60ECC49B2BC5A4B500DEF571 /* characterFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = characterFlip.png; sourceTree = "<group>"; };
+		60ECC49C2BC5A4B500DEF571 /* holdGun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holdGun.png; sourceTree = "<group>"; };
+		60ECC49D2BC5A4B500DEF571 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		60ECC49E2BC5A4B500DEF571 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = "<group>"; };
+		60ECC4B42BC5A60C00DEF571 /* menuBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menuBackground.jpg; sourceTree = "<group>"; };
+		60ECC4B82BC631C200DEF571 /* displayControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = displayControls.h; sourceTree = "<group>"; };
+		60ECC4BB2BC6487700DEF571 /* pauseBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseBoard.png; sourceTree = "<group>"; };
+		60ECC4BD2BC648E200DEF571 /* pauseGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pauseGame.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60ECC45A2BC5A43900DEF571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60ECC47E2BC5A47E00DEF571 /* SDL2_ttf.framework in Frameworks */,
+				60ECC47C2BC5A47E00DEF571 /* SDL2.framework in Frameworks */,
+				60ECC4782BC5A47E00DEF571 /* SDL2_image.framework in Frameworks */,
+				60ECC47A2BC5A47E00DEF571 /* SDL2_mixer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60086F842BCF6C10008D6BB6 /* gameState */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC4B82BC631C200DEF571 /* displayControls.h */,
+				60ECC4822BC5A4B500DEF571 /* mainMenu.h */,
+				60ECC4832BC5A4B500DEF571 /* gameOver.h */,
+				60ECC4BD2BC648E200DEF571 /* pauseGame.h */,
+			);
+			path = gameState;
+			sourceTree = "<group>";
+		};
+		60086F862BCF6CCF008D6BB6 /* displayAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC4842BC5A4B500DEF571 /* displayTextHeader.h */,
+				60ECC4862BC5A4B500DEF571 /* gameMusic.h */,
+				60086F822BCF6A2D008D6BB6 /* recordScore.h */,
+			);
+			path = displayAttribute;
+			sourceTree = "<group>";
+		};
+		60086F882BCF6E02008D6BB6 /* variableGame */ = {
+			isa = PBXGroup;
+			children = (
+				60086F872BCF6D14008D6BB6 /* declareVariable.h */,
+				60B8D62B2BC9CDF300BA2C4D /* struct.h */,
+			);
+			path = variableGame;
+			sourceTree = "<group>";
+		};
+		60ECC4542BC5A43900DEF571 = {
+			isa = PBXGroup;
+			children = (
+				60ECC45F2BC5A43900DEF571 /* zombieAppocalypse-v1.1 */,
+				60ECC45E2BC5A43900DEF571 /* Products */,
+				60ECC4732BC5A47D00DEF571 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60ECC45E2BC5A43900DEF571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC45D2BC5A43900DEF571 /* zombieAppocalypse-v1.1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60ECC45F2BC5A43900DEF571 /* zombieAppocalypse-v1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC49E2BC5A4B500DEF571 /* main.cpp */,
+				60ECC4872BC5A4B500DEF571 /* gameFont */,
+				60ECC4812BC5A4B500DEF571 /* gameHeader */,
+				60ECC48A2BC5A4B500DEF571 /* gameSound */,
+				60ECC48E2BC5A4B500DEF571 /* gameSource */,
+			);
+			path = "zombieAppocalypse-v1.1";
+			sourceTree = "<group>";
+		};
+		60ECC4732BC5A47D00DEF571 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC4742BC5A47D00DEF571 /* SDL2_image.framework */,
+				60ECC4752BC5A47D00DEF571 /* SDL2_mixer.framework */,
+				60ECC4772BC5A47E00DEF571 /* SDL2_ttf.framework */,
+				60ECC4762BC5A47D00DEF571 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60ECC4812BC5A4B500DEF571 /* gameHeader */ = {
+			isa = PBXGroup;
+			children = (
+				60086F842BCF6C10008D6BB6 /* gameState */,
+				60086F862BCF6CCF008D6BB6 /* displayAttribute */,
+				60086F882BCF6E02008D6BB6 /* variableGame */,
+				60086F812BCF69B5008D6BB6 /* initSDL2.h */,
+				60ECC4852BC5A4B500DEF571 /* handleAnimation.h */,
+			);
+			path = gameHeader;
+			sourceTree = "<group>";
+		};
+		60ECC4872BC5A4B500DEF571 /* gameFont */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC4882BC5A4B500DEF571 /* font.ttf */,
+				60ECC4892BC5A4B500DEF571 /* fontGame.ttf */,
+			);
+			path = gameFont;
+			sourceTree = "<group>";
+		};
+		60ECC48A2BC5A4B500DEF571 /* gameSound */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC48B2BC5A4B500DEF571 /* mainMenuSound.wav */,
+				60B8D62E2BC9D1D000BA2C4D /* gameOverSound.wav */,
+				60086F512BCEC218008D6BB6 /* zombieDeath.wav */,
+				60086F4B2BCEB925008D6BB6 /* gunShot.wav */,
+				60ECC48C2BC5A4B500DEF571 /* battleSound.wav */,
+				60ECC48D2BC5A4B500DEF571 /* shootEffect.wav */,
+			);
+			path = gameSound;
+			sourceTree = "<group>";
+		};
+		60ECC48E2BC5A4B500DEF571 /* gameSource */ = {
+			isa = PBXGroup;
+			children = (
+				60086F592BCF4FBD008D6BB6 /* mapGame.png */,
+				607711192BD7EECA00526364 /* deathAnimation.png */,
+				60ECC4B42BC5A60C00DEF571 /* menuBackground.jpg */,
+				60ECC4BB2BC6487700DEF571 /* pauseBoard.png */,
+				60ECC48F2BC5A4B500DEF571 /* heart.png */,
+				60ECC4912BC5A4B500DEF571 /* gameButton */,
+				60ECC4972BC5A4B500DEF571 /* gameCharacter */,
+			);
+			path = gameSource;
+			sourceTree = "<group>";
+		};
+		60ECC4912BC5A4B500DEF571 /* gameButton */ = {
+			isa = PBXGroup;
+			children = (
+				60086F552BCEC5D7008D6BB6 /* bullet.png */,
+				60086F412BCE9ACC008D6BB6 /* playAgainButton.png */,
+				60086F432BCE9AF8008D6BB6 /* backButton.png */,
+				60086F472BCEB591008D6BB6 /* continueButton.png */,
+				60086F2D2BCE935D008D6BB6 /* playButton.png */,
+				60086F492BCEB658008D6BB6 /* backToMenuButton.png */,
+				60086F312BCE9370008D6BB6 /* exitButton.png */,
+				60086F2F2BCE936A008D6BB6 /* optionButton.png */,
+				60ECC4952BC5A4B500DEF571 /* scoreBoard.png */,
+			);
+			path = gameButton;
+			sourceTree = "<group>";
+		};
+		60ECC4972BC5A4B500DEF571 /* gameCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				60ECC49A2BC5A4B500DEF571 /* holdGunFlip.png */,
+				60ECC49B2BC5A4B500DEF571 /* characterFlip.png */,
+				60ECC49C2BC5A4B500DEF571 /* holdGun.png */,
+				60ECC49D2BC5A4B500DEF571 /* character.png */,
+			);
+			path = gameCharacter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60ECC45C2BC5A43900DEF571 /* zombieAppocalypse-v1.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60ECC4702BC5A43D00DEF571 /* Build configuration list for PBXNativeTarget "zombieAppocalypse-v1.1" */;
+			buildPhases = (
+				60ECC4592BC5A43900DEF571 /* Sources */,
+				60ECC45A2BC5A43900DEF571 /* Frameworks */,
+				60ECC45B2BC5A43900DEF571 /* Resources */,
+				60ECC4802BC5A47E00DEF571 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zombieAppocalypse-v1.1";
+			productName = "zombieAppocalypse-v1.1";
+			productReference = 60ECC45D2BC5A43900DEF571 /* zombieAppocalypse-v1.1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60ECC4552BC5A43900DEF571 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					60ECC45C2BC5A43900DEF571 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 60ECC4582BC5A43900DEF571 /* Build configuration list for PBXProject "zombieAppocalypse-v1.1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60ECC4542BC5A43900DEF571;
+			productRefGroup = 60ECC45E2BC5A43900DEF571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60ECC45C2BC5A43900DEF571 /* zombieAppocalypse-v1.1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60ECC45B2BC5A43900DEF571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60086F302BCE936A008D6BB6 /* optionButton.png in Resources */,
+				60ECC4A22BC5A4B500DEF571 /* battleSound.wav in Resources */,
+				60ECC4A92BC5A4B500DEF571 /* scoreBoard.png in Resources */,
+				60086F5A2BCF4FBD008D6BB6 /* mapGame.png in Resources */,
+				60086F322BCE9370008D6BB6 /* exitButton.png in Resources */,
+				60ECC4A12BC5A4B500DEF571 /* mainMenuSound.wav in Resources */,
+				60086F4A2BCEB658008D6BB6 /* backToMenuButton.png in Resources */,
+				6077111A2BD7EECA00526364 /* deathAnimation.png in Resources */,
+				60086F422BCE9ACC008D6BB6 /* playAgainButton.png in Resources */,
+				60ECC4B02BC5A4B500DEF571 /* character.png in Resources */,
+				60ECC49F2BC5A4B500DEF571 /* font.ttf in Resources */,
+				60086F482BCEB591008D6BB6 /* continueButton.png in Resources */,
+				60ECC4A02BC5A4B500DEF571 /* fontGame.ttf in Resources */,
+				60ECC4A42BC5A4B500DEF571 /* heart.png in Resources */,
+				60ECC4B52BC5A60C00DEF571 /* menuBackground.jpg in Resources */,
+				60086F562BCEC5D7008D6BB6 /* bullet.png in Resources */,
+				60086F2E2BCE935D008D6BB6 /* playButton.png in Resources */,
+				60ECC4AF2BC5A4B500DEF571 /* holdGun.png in Resources */,
+				60ECC4BC2BC6487700DEF571 /* pauseBoard.png in Resources */,
+				60ECC4AE2BC5A4B500DEF571 /* characterFlip.png in Resources */,
+				60B8D62F2BC9D1D000BA2C4D /* gameOverSound.wav in Resources */,
+				60086F442BCE9AF8008D6BB6 /* backButton.png in Resources */,
+				60086F522BCEC218008D6BB6 /* zombieDeath.wav in Resources */,
+				60ECC4A32BC5A4B500DEF571 /* shootEffect.wav in Resources */,
+				60ECC4AD2BC5A4B500DEF571 /* holdGunFlip.png in Resources */,
+				60086F4C2BCEB926008D6BB6 /* gunShot.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60ECC4592BC5A43900DEF571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60ECC4B12BC5A4B500DEF571 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60ECC46E2BC5A43D00DEF571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60ECC46F2BC5A43D00DEF571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		60ECC4712BC5A43D00DEF571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "zombieAppocalypse-v1.1/zombieAppocalypse_v1_1.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "zombieAppocalypse-v1.1/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "organization.zombieAppocalypse-v1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		60ECC4722BC5A43D00DEF571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "zombieAppocalypse-v1.1/zombieAppocalypse_v1_1.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "zombieAppocalypse-v1.1/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "organization.zombieAppocalypse-v1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60ECC4582BC5A43900DEF571 /* Build configuration list for PBXProject "zombieAppocalypse-v1.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60ECC46E2BC5A43D00DEF571 /* Debug */,
+				60ECC46F2BC5A43D00DEF571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60ECC4702BC5A43D00DEF571 /* Build configuration list for PBXNativeTarget "zombieAppocalypse-v1.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60ECC4712BC5A43D00DEF571 /* Debug */,
+				60ECC4722BC5A43D00DEF571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60ECC4552BC5A43900DEF571 /* Project object */;
+}
