@@ -12,5 +12,6 @@
 - D (sang phải)
 
 ### Có 5 giai đoạn tương ứng với 5 độ khó khác nhau, giai đoạn càng cao thì người chơi cũng như zombie sẽ được cường hoá
-### Mẹo: Hạn chế bắn trượt zombie, nếu không sẽ không kịp di chuyển về đẻ hạ zombie
+### Mẹo: Hạn chế bắn trượt zombie, nếu không sẽ không kịp di chuyển về để hạ zombie
+### Hỗ trợ trên nền tảng MacBook
 
